@@ -22,3 +22,23 @@
 	</form>
 </body>
 </html>
+<?php
+// Get the form data
+$name = $_POST['name'];
+$email = $_POST['email'];
+$parent_email = $_POST['parent-email'];
+$roll_id = $_POST['roll-id'];
+
+// Open the text file for writing
+$file = fopen("student_info.txt", "a");
+
+// Write the student info to the file
+fwrite($file, "$name\t$email\t$parent_email\t$roll_id\n");
+
+// Close the file
+fclose($file);
+
+// Redirect the user back to the form
+header("Location: index.html");
+exit();
+?>
