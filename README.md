@@ -1,43 +1,24 @@
-# gcoearaa.github.io
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Gym Training Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      /* Add any custom styles for your website here */
-    </style>
-  </head>
-  <body>
-    <!-- Header section -->
-    <header>
-      <h1>Welcome to My Gym Training Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Training Programs</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main content section -->
-    <main>
-      <section>
-        <h2>About Us</h2>
-        <p>Insert information about your gym and what sets it apart from others.</p>
-      </section>
-      <section>
-        <h2>Training Programs</h2>
-        <p>Insert information about your gym's training programs. This could include things like strength training, cardio, group classes, etc.</p>
-      </section>
-    </main>
-
-    <!-- Footer section -->
-    <footer>
-      <p>&copy; 2023 My Gym Training Website</p>
-    </footer>
-  </body>
+<head>
+	<title>Student Information Form</title>
+</head>
+<body>
+	<h1>Student Information Form</h1>
+	<form action="submit.php" method="post">
+		<label for="name">Student Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+		
+		<label for="email">Student Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		
+		<label for="parent-email">Parent Email:</label>
+		<input type="email" id="parent-email" name="parent-email" required><br><br>
+		
+		<label for="roll-id">Roll ID:</label>
+		<input type="text" id="roll-id" name="roll-id" required><br><br>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
 </html>
