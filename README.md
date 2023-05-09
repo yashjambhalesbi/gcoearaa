@@ -1,26 +1,26 @@
-while True:
-    # Take user input
-    num1 = float(input("Enter first number: "))
-    operator = input("Enter operator (+, -, *, /): ")
-    num2 = float(input("Enter second number: "))
-
-    # Perform calculation based on operator
-    if operator == "+":
-        result = num1 + num2
-    elif operator == "-":
-        result = num1 - num2
-    elif operator == "*":
-        result = num1 * num2
-    elif operator == "/":
-        result = num1 / num2
-    else:
-        print("Invalid operator.")
-        continue
-
-    # Display result
-    print(f"{num1} {operator} {num2} = {result}")
-
-    # Ask user if they want to perform another calculation
-    another_calculation = input("Do you want to perform another calculation? (Y/N) ").upper()
-    if another_calculation != "Y":
-        break
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form method="POST" action="/calculate">
+      <label for="num1">First number:</label>
+      <input type="text" name="num1" id="num1"><br>
+      <label for="num2">Second number:</label>
+      <input type="text" name="num2" id="num2"><br>
+      <label for="operation">Operation:</label>
+      <select name="operation" id="operation">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+      </select><br>
+      <input type="submit" value="Calculate">
+    </form>
+    {% if result %}
+    <p>Result: {{ result }}</p>
+    {% endif %}
+  </body>
+</html>
