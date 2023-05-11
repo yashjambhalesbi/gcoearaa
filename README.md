@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>Student Management System</title>
+        <title>Someshwar Kale</title>
 </head>
 <body>
         <h1>Student Management System</h1>
