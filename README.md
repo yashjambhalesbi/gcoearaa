@@ -5,7 +5,7 @@
         <title>Someshwar Kale</title>
 </head>
 <body>
-        <h1>Student Management System</h1>
+        <h1>Someshwar Kale</h1>
         <h2>Class Teacher Registration</h2>
         <form>
                 <label for="email">Email:</label>
